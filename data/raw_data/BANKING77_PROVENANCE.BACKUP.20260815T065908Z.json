@@ -1,0 +1,39 @@
+﻿{
+    "dataset":  "BANKING77",
+    "source_urls":  [
+                        "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/banking_data/train.csv",
+                        "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/banking_data/test.csv",
+                        "https://huggingface.co/datasets/PolyAI/banking77"
+                    ],
+    "license":  "CC-BY-4.0",
+    "download_date":  "2026-08-15T06:49:20.2212004Z",
+    "files":  [
+                  {
+                      "filename":  "banking77_train.csv",
+                      "path":  "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\data\\raw_data\\banking77_train.csv",
+                      "size_bytes":  839073,
+                      "num_lines":  10017,
+                      "data_rows":  10016,
+                      "columns":  [
+                                      "text",
+                                      "category"
+                                  ],
+                      "unique_label_count":  81
+                  },
+                  {
+                      "filename":  "banking77_test.csv",
+                      "path":  "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\data\\raw_data\\banking77_test.csv",
+                      "size_bytes":  239961,
+                      "num_lines":  3085,
+                      "data_rows":  3084,
+                      "columns":  [
+                                      "text",
+                                      "category"
+                                  ],
+                      "unique_label_count":  78
+                  }
+              ],
+    "languages":  [
+                      "English"
+                  ]
+}

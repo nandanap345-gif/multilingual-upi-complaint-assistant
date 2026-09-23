@@ -1,0 +1,120 @@
+{
+  "generated_on": "2026-08-15T09:30:00Z",
+  "candidates": [
+    {
+      "name": "AI4Bharat IndicNLP resources",
+      "url": "https://ai4bharat.iitm.ac.in/indicnlp/",
+      "organization": "AI4Bharat / IndicNLP",
+      "language_script": "Malayalam (native script) and other Indic languages",
+      "approx_size": "various corpora; language-specific sizes available on site",
+      "domain": "general web / Wikipedia / curated Indic corpora",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam (Devanagari? no — Malayalam script U+0D00–U+0D7F)",
+      "license": "varies by sub-resource; check individual corpora on site",
+      "permitted_use": "research likely permitted for many resources; verify each license",
+      "relevance_to_UPI": "Low — general-domain language resources, not complaint-specific",
+      "suitability": "Good for tokenizer/language-resource work; insufficient alone for intent labeling",
+      "limitations": "Domain mismatch; requires targeted data collection or annotation for UPI intents"
+    },
+    {
+      "name": "OSCAR (language-filtered CommonCrawl)",
+      "url": "https://oscar-corpus.com/",
+      "organization": "OSCAR / BigScience / CommonCrawl-derived",
+      "language_script": "Malayalam (native script); large web crawl",
+      "approx_size": "corpora extracted per language from CommonCrawl (multiple GBs likely)",
+      "domain": "web-crawl (general-domain)",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam script",
+      "license": "derived from CommonCrawl; check OSCAR license and source licensing",
+      "permitted_use": "research generally permitted, but verify commercial terms",
+      "relevance_to_UPI": "Low — domain mismatch; useful for language modeling/tokenization",
+      "suitability": "Good for vocabulary/subword/tokenizer experiments; not for intent labels",
+      "limitations": "No intent labels; noisy web data; provenance/licensing complexity"
+    },
+    {
+      "name": "mC4 (multilingual C4 via TensorFlow Datasets)",
+      "url": "https://www.tensorflow.org/datasets/catalog/mc4",
+      "organization": "TensorFlow Datasets / CommonCrawl",
+      "language_script": "Malayalam (native script included)",
+      "approx_size": "very large; language slices vary",
+      "domain": "web-crawl (general)",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam script",
+      "license": "derived from CommonCrawl; review TFDS terms",
+      "permitted_use": "research; verify for commercial use",
+      "relevance_to_UPI": "Low",
+      "suitability": "Good for tokenizer/subword coverage; not sufficient for intent labeling",
+      "limitations": "General-domain; may contain noisy data"
+    },
+    {
+      "name": "FLORES / NLLB (FLORES-200)",
+      "url": "https://github.com/facebookresearch/flores",
+      "organization": "Facebook Research / Open Language Data Initiative mirrors",
+      "language_script": "Malayalam present in FLORES test sets (native script)",
+      "approx_size": "focused translation benchmarks (thousands of sentences)",
+      "domain": "translation benchmark (varied domains)",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam script",
+      "license": "CC-BY-SA or CC-BY-NC for subsets — check specific files",
+      "permitted_use": "research use allowed by license terms",
+      "relevance_to_UPI": "Low — parallel sentences good for translation evaluation but not complaint intents",
+      "suitability": "Useful for cross-lingual testing and verification, not for intent datasets",
+      "limitations": "Not complaint-specific; limited size for intent experiments"
+    },
+    {
+      "name": "Samanantar parallel corpus",
+      "url": "https://github.com/anoopkunchukuttan/samanantar",
+      "organization": "Anoop Kunchukuttan et al.",
+      "language_script": "Malayalam-English parallel segments (native Malayalam script)",
+      "approx_size": "tens of millions of parallel sentence pairs across Indian languages (varies)",
+      "domain": "mixed-domain parallel corpus",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam script",
+      "license": "varies by sub-corpus; check README and source links",
+      "permitted_use": "research generally permitted; verify sub-corpus licensing",
+      "relevance_to_UPI": "Low — parallel text useful for MT and alignment, not intent labeling",
+      "suitability": "High for translation/alignment/tokenizer work; low for intent labels without further annotation",
+      "limitations": "Domain mismatch; licensing varies"
+    },
+    {
+      "name": "OPUS / OpenSubtitles / Tatoeba",
+      "url": "https://opus.nlpl.eu/",
+      "organization": "OPUS / NLP processing community",
+      "language_script": "Malayalam segments available in some corpora (native script)",
+      "approx_size": "varies per corpus; OpenSubtitles contains parallel/subtitles data",
+      "domain": "conversational/subtitles; mixed",
+      "labels_or_intents": null,
+      "script_type": "native Malayalam script",
+      "license": "varies by sub-corpus",
+      "permitted_use": "verify per-subcorpus licensing",
+      "relevance_to_UPI": "Low — conversational data may help dialogue modelling but domain mismatch",
+      "suitability": "Supplementary resource for examples and tokenization",
+      "limitations": "No complaint-specific labels; licensing varies"
+    }
+  ],
+  "romanized_malayalam_availability": {
+    "found_genuine_resources": false,
+    "notes": "Publicly available Romanized Malayalam corpora for customer-support domain were not located during this assessment. Romanized Malayalam is uncommon in large public corpora; research groups have ad-hoc Romanized datasets but provenance and licensing vary."
+  },
+  "code_mixed_malayalam_english": {
+    "found": false,
+    "notes": "Code-mixed Malayalam-English corpora exist in some research papers but curated, license-clean, complaint-domain code-mixed datasets were not found. Collection/annotation would be required."
+  },
+  "recommended_option": {
+    "primary": "A",
+    "description": "Collect a genuine native-Malayalam, domain-targeted (UPI/banking/customer-support) dataset with human annotation for intents. This provides the strongest scientific validity.",
+    "rationale": "Domain alignment, label validity, provenance, and annotation quality are critical for intent classification. Existing public corpora are general-domain or parallel/translation-focused and do not reliably provide complaint-level intents."
+  },
+  "pragmatic_interim": {
+    "primary": "C",
+    "description": "Create a small human-annotated Malayalam evaluation/test set while collecting larger native data. Use FLORES/Samanantar/OSCAR/mC4 only for tokenizer/language-resource experiments, not for intent labels.",
+    "rationale": "Enables initial experiments and comparisons without altering validated training data or fabricating labels."
+  },
+  "tokenization_notes": "Large general-domain Malayalam corpora (OSCAR, mC4, IndicNLP) provide sufficient data for tokenization/subword experiments; however, domain mismatch limits conclusions about tokenizer performance for UPI complaint intents. Romanized Malayalam tokenization requires genuine Romanized data; otherwise, experiments risk being non-representative.",
+  "limitations_and_risks": "No public Malayalam customer-support or banking-specific intent dataset was located. Using general-domain corpora risks domain mismatch. Translating existing English/NON-Malayalam complaint data into Malayalam without human verification creates semantic drift and invalidates intent labels.",
+  "next_steps": [
+    "Plan a targeted data collection protocol for native Malayalam UPI/banking customer complaints (privacy-safe, consent-aware), including annotation guidelines matching Step 3C's strict UPI labels.",
+    "Create a small human-annotated Malayalam test set (50–500 examples) drawn from customer forums, support logs (with permissions), or curated examples, and keep it separate from training data.",
+    "Use IndicNLP/OSCAR/mC4 and FLORES/Samanantar resources for tokenizer and cross-lingual alignment preparatory work only after licensing checks."
+  ]
+}

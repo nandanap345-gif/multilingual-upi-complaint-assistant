@@ -1,0 +1,34 @@
+{
+  "step": "5B",
+  "title": "Multilingual evaluation using existing XLM-R model",
+  "dataset": "karanverma19_multilingual_customer_support",
+  "total_rows": 41,
+  "compatible_rows": 0,
+  "incompatible_rows": 41,
+  "evaluation_status": "not_evaluable_due_to_label_incompatibility",
+  "script_distribution": {
+    "latin": 41
+  },
+  "language_distribution": {
+    "Hindi": 15,
+    "Hinglish": 12,
+    "English": 7,
+    "Punjabi": 7
+  },
+  "metrics": {
+    "accuracy": null,
+    "weighted_precision": null,
+    "weighted_recall": null,
+    "weighted_f1": null,
+    "macro_precision": null,
+    "macro_recall": null,
+    "macro_f1": null
+  },
+  "confusion_matrix_shape": null,
+  "model": "XLM-RoBERTa",
+  "model_source": "existing Step 5A trained model",
+  "training_performed_in_step5b": false,
+  "raw_data_modified": false,
+  "label_mapping_policy": "Only exact BANKING77-compatible intent/category labels were evaluated. No synthetic or manually fabricated label mappings were introduced.",
+  "malayalam_policy": "Malayalam data was not fabricated, translated, or transliterated."
+}

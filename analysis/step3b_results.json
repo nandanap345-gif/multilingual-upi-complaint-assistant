@@ -1,0 +1,204 @@
+{
+  "generated_on": "2026-08-15T07:39:59.386173Z",
+  "banking": {
+    "train_rows": 10003,
+    "test_rows": 3080,
+    "columns": [
+      "text",
+      "category"
+    ],
+    "missing_values": {
+      "text": 0,
+      "category": 0
+    },
+    "dup_train_texts": 4,
+    "dup_test_texts": 1,
+    "dup_combined_texts": 11,
+    "unique_texts": 13072,
+    "unique_intents": 77,
+    "intent_counts": {
+      "card_arrival": 193,
+      "card_linking": 179,
+      "exchange_rate": 152,
+      "card_payment_wrong_exchange_rate": 207,
+      "extra_charge_on_statement": 206,
+      "pending_cash_withdrawal": 183,
+      "fiat_currency_support": 166,
+      "card_delivery_estimate": 152,
+      "automatic_top_up": 167,
+      "card_not_working": 152,
+      "exchange_via_app": 158,
+      "lost_or_stolen_card": 122,
+      "age_limit": 150,
+      "pin_blocked": 155,
+      "contactless_not_working": 75,
+      "top_up_by_bank_transfer_charge": 151,
+      "pending_top_up": 189,
+      "cancel_transfer": 197,
+      "top_up_limits": 137,
+      "wrong_amount_of_cash_received": 220,
+      "card_payment_fee_charged": 227,
+      "transfer_not_received_by_recipient": 211,
+      "supported_cards_and_currencies": 169,
+      "getting_virtual_card": 138,
+      "card_acceptance": 99,
+      "top_up_reverted": 186,
+      "balance_not_updated_after_cheque_or_cash_deposit": 221,
+      "card_payment_not_recognised": 208,
+      "edit_personal_details": 161,
+      "why_verify_identity": 161,
+      "unable_to_verify_identity": 142,
+      "get_physical_card": 146,
+      "visa_or_mastercard": 175,
+      "topping_up_by_card": 143,
+      "disposable_card_limits": 161,
+      "compromised_card": 126,
+      "atm_support": 127,
+      "direct_debit_payment_not_recognised": 222,
+      "passcode_forgotten": 145,
+      "declined_cash_withdrawal": 213,
+      "pending_card_payment": 199,
+      "lost_or_stolen_phone": 161,
+      "request_refund": 209,
+      "declined_transfer": 173,
+      "Refund_not_showing_up": 202,
+      "declined_card_payment": 193,
+      "pending_transfer": 188,
+      "terminate_account": 148,
+      "card_swallowed": 101,
+      "transaction_charged_twice": 215,
+      "verify_source_of_funds": 153,
+      "transfer_timing": 168,
+      "reverted_card_payment?": 201,
+      "change_pin": 162,
+      "beneficiary_not_allowed": 196,
+      "transfer_fee_charged": 212,
+      "receiving_money": 135,
+      "failed_transfer": 177,
+      "transfer_into_account": 153,
+      "verify_top_up": 166,
+      "getting_spare_card": 169,
+      "top_up_by_cash_or_cheque": 154,
+      "order_physical_card": 160,
+      "virtual_card_not_working": 81,
+      "wrong_exchange_rate_for_cash_withdrawal": 203,
+      "get_disposable_virtual_card": 137,
+      "top_up_failed": 185,
+      "balance_not_updated_after_bank_transfer": 211,
+      "cash_withdrawal_not_recognised": 200,
+      "exchange_charge": 161,
+      "top_up_by_card_charge": 154,
+      "activate_my_card": 199,
+      "cash_withdrawal_charge": 217,
+      "card_about_to_expire": 169,
+      "apple_pay_or_google_pay": 166,
+      "verify_my_identity": 144,
+      "country_support": 169
+    },
+    "char_stats": {
+      "min": 13,
+      "max": 433,
+      "mean": 58.2386302835741,
+      "median": 46,
+      "stdev": 39.55415654358262
+    },
+    "word_stats": {
+      "min": 2,
+      "max": 79,
+      "mean": 11.71474432469617,
+      "median": 10,
+      "stdev": 7.6365673994533365
+    },
+    "unusually_short_examples": [],
+    "unusually_long_examples": [
+      "I have found my lost or stolen card, would I still have to activate the new card that was sent to me through the mail in order to access my account?",
+      "Hi, I am disappointed to see such a bad exchange rate and hope you can assist me. Would you be able to confirm the official interbank exchange rate for me?",
+      "I just saw the exchange rate you use, but it's so bad that I can't believe that it's the official interbank exchange rate! Is this truly the official interbank exchange rate?",
+      "My client was converting their Russian ruble into UK pound currency when they noticed their bill was much too high for the exchange. What happened?",
+      "I have been overcharged. I just changed over Russian Ruble to UK pounds and it was too much. It seems something was wrong with my exchange.",
+      "My exchange seems to have something wrong with it. I changed over Russian Ruble to UK pounds and it appears I was charged way more than I was supposed to be.",
+      "I'm going on a trip soon and I needed to convert my Russian ruble to UK pounds, but when I did, your company charged me above the exchange rate. Did you mess up my transaction?",
+      "Hello, I believe there has been a mistake made on the exchange rate for my card. Could you please check the official interbank exchange rate for me?",
+      "On my statement, there is a strange 1\u00a3 charge that appears as pending. What's causing that? I haven't purchased anything that's just a pound.",
+      "Hello, there seems to be a billing mistake associated with my account.  My app was charged $1 more than it should have.  Could you please explain why this may have happened?"
+    ],
+    "representative_examples": {
+      "card_payment_fee_charged": [
+        "There was a fee charged when I paid with my card.",
+        "I received a fee I should not have.",
+        "Why am I being a charged for using my card?",
+        "Tell me why there is a fee for a card payment.",
+        "I don't understand why I'm being charged for using my card."
+      ],
+      "direct_debit_payment_not_recognised": [
+        "Hi, i found a large amount payment in my old statements which i am sure was not made by me. I am aware that the time has passed but is there a way to raise a dispute for this payment now?",
+        "what is the word?",
+        "Please help my find out why there is an odd direct debit in my records.",
+        "I am seeing in the App a diret debit that its not mine",
+        "There is a direct debit payment that I did not make."
+      ],
+      "balance_not_updated_after_cheque_or_cash_deposit": [
+        "Why is my last cheque deposit taking so long?",
+        "I am still waiting for a the cash I deposited this morning",
+        "I tried using a check to update my balance, but it isn't work? Is something wrong?",
+        "I deposited cash but it isn't showing up in my account",
+        "I put some cash into my account but it's not displaying that on my balance."
+      ]
+    }
+  },
+  "karanverma19": {
+    "rows": 41,
+    "columns": [
+      "query",
+      "intent",
+      "language",
+      "category"
+    ],
+    "missing_values": {
+      "query": 0,
+      "intent": 0,
+      "language": 0,
+      "category": 0
+    },
+    "dup_texts": 0,
+    "unique_texts": 41,
+    "unique_intents": 5,
+    "intent_counts": {
+      "refund": 7,
+      "payment_issue": 10,
+      "delivery_issue": 6,
+      "account_issue": 9,
+      "complaint": 9
+    },
+    "lang_counts": {
+      "Hindi": 15,
+      "English": 7,
+      "Hinglish": 12,
+      "Punjabi": 7
+    },
+    "char_stats": {
+      "min": 18,
+      "max": 60,
+      "mean": 36.5609756097561,
+      "median": 36,
+      "stdev": 8.72352798537382
+    },
+    "word_stats": {
+      "min": 3,
+      "max": 10,
+      "mean": 6.487804878048781,
+      "median": 6,
+      "stdev": 1.6097560975609757
+    }
+  },
+  "cross_comparison": {
+    "banking_rows": 13083,
+    "banking_intents": 77,
+    "banking_avg_char_len": 58.2386302835741,
+    "karan_rows": 41,
+    "karan_intents": 5,
+    "karan_avg_char_len": 36.5609756097561,
+    "banking_dup_count": 11,
+    "karan_dup_count": 0
+  }
+}

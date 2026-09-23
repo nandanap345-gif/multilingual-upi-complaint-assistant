@@ -1,0 +1,91 @@
+{
+  "generated_on": "2026-08-15",
+  "candidates_inspected": [
+    {
+      "id": "zenodo_4015234",
+      "name": "A Sentiment Analysis Dataset for Code-Mixed Malayalam-English",
+      "source": "https://zenodo.org/record/4015234",
+      "files": [
+        {
+          "name": "Malayalam_first_ready_for_sentiment.tsv",
+          "size_bytes": 498042,
+          "format": "tsv"
+        }
+      ],
+      "license": {
+        "name": "CC-BY-4.0",
+        "research_permitted": true,
+        "redistribution_permitted": true,
+        "source_url": "https://zenodo.org/record/4015234"
+      },
+      "metadata_verified_via": "Zenodo API",
+      "sample_accessed": true,
+      "sample_count_previewed": 100,
+      "sample_access_reason": "Downloaded 100-line preview into tmp_inspect for inspection.",
+      "sample_excerpts": [
+        "Ichayan fans pinne mmade ettan fansm ivde oru like idadey",
+        "Kalki super hit akum enn Bonny parayan paranju",
+        "Padathinte peru sheriyalla yenth unda oru veraity vende perinu."
+      ],
+      "observations": {
+        "declared_language": "mal",
+        "domain": "social_media / sentiment",
+        "labels": "sentiment (human-annotated)",
+        "intent_labels": false,
+        "human_generated": true,
+        "translated_or_synthetic": false,
+        "code_mixing": true,
+        "native_script_present": "likely",
+        "romanized_present": "possible",
+        "conversational": false,
+        "complaints_or_payment": false
+      },
+      "suitability": "MEDIUM",
+      "recommended_role": ["B","C"]
+    },
+    {
+      "id": "hf_hospitalcall_malayalam",
+      "name": "hospitalcall_malayalam",
+      "source": "https://huggingface.co/datasets/anjalikrishna07/hospitalcall_malayalam",
+      "files": [
+        {"name": "data/train.parquet", "format": "parquet"},
+        {"name": "metadata.csv", "size_bytes": 2670000, "format": "csv (metadata)"}
+      ],
+      "license": {
+        "name": "unspecified_in_automated_check",
+        "research_permitted": "unknown",
+        "redistribution_permitted": "unknown",
+        "source_url": "https://huggingface.co/datasets/anjalikrishna07/hospitalcall_malayalam"
+      },
+      "metadata_verified_via": "Hugging Face dataset card and file tree",
+      "sample_accessed": true,
+      "sample_count_previewed": 100,
+      "sample_access_reason": "Downloaded 100-line preview into tmp_inspect for inspection.",
+      "sample_excerpts": [
+        "നമസ്കാരം, അമൃത ആശുപത്രിയിലേക്കു വിളിച്ചതിന് നന്ദി.",
+        "പേയ്മെന്റിനായി ക്യാഷ്, കാർഡ്, യുപിഐ എന്നിവ സ്വീകരിക്കുന്നതാണ്.",
+        "അപ്പോയിന്റ്മെന്റ് രജിസ്റ്റർ ചെയ്യുന്നതിനായി ആദ്യം നിങ്ങളുടെ മുഴുവൻ പേര് പറയാമോ?"
+      ],
+      "observations": {
+        "declared_language": "mal (inferred)",
+        "domain": "call-center / spoken transcripts (hospital domain)",
+        "labels": "none indicated (ASR/transcript metadata)",
+        "intent_labels": false,
+        "human_generated": "likely (human transcriptions)",
+        "translated_or_synthetic": "unknown",
+        "code_mixing": "unknown",
+        "native_script_present": "likely",
+        "romanized_present": "unlikely",
+        "conversational": true,
+        "complaints_or_payment": false
+      },
+      "suitability": "MEDIUM",
+      "recommended_role": ["B","C"]
+    }
+  ],
+  "final_recommendation": {
+    "summary": "Neither candidate is suitable for direct main intent training. Both are potentially valuable for evaluation and language-diversity analyses after human review and license checks.",
+    "best_candidate": "zenodo_4015234",
+    "best_candidate_reason": "Directly addresses code-mixed Malayalam-English and is human-annotated (sentiment). Useful for code-mixing evaluation rather than intent training."
+  }
+}

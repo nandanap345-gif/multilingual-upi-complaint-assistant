@@ -1,0 +1,40 @@
+{
+  "step": "4D",
+  "dataset": "BANKING77",
+  "models_compared": [
+    "Logistic Regression",
+    "Linear SVM",
+    "Multinomial Naive Bayes"
+  ],
+  "selection_criterion": "Highest Macro F1",
+  "best_classical_model": "Linear SVM",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.84249918646274,
+      "weighted_precision": 0.85630696954319,
+      "weighted_recall": 0.84249918646274,
+      "weighted_f1": 0.8404071949016747,
+      "macro_precision": 0.8563343931566029,
+      "macro_recall": 0.842259494891074,
+      "macro_f1": 0.8403024058343054
+    },
+    "Linear SVM": {
+      "accuracy": 0.8926130816791409,
+      "weighted_precision": 0.8965950065877936,
+      "weighted_recall": 0.8926130816791409,
+      "weighted_f1": 0.8927450852199137,
+      "macro_precision": 0.8966294056975177,
+      "macro_recall": 0.8925710254657623,
+      "macro_f1": 0.8927434645486861
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.8366417181906931,
+      "weighted_precision": 0.8520874396882313,
+      "weighted_recall": 0.8366417181906931,
+      "weighted_f1": 0.8325841150990944,
+      "macro_precision": 0.8522765414478719,
+      "macro_recall": 0.8363461100303206,
+      "macro_f1": 0.8324790937383406
+    }
+  }
+}

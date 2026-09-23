@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">UPI Complaint Intelligence Pipeline</title>
+  <desc id="desc">A horizontal pipeline diagram showing customer complaint input, preprocessing, routing, machine-learning fallback, and support output.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081225"/>
+      <stop offset="45%" stop-color="#0f2042"/>
+      <stop offset="100%" stop-color="#133a7c"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#8ab4ff"/>
+    </marker>
+    <style>
+      .title{font:700 44px Inter,Segoe UI,Arial,sans-serif; fill:#ffffff}
+      .subtitle{font:400 20px Inter,Segoe UI,Arial,sans-serif; fill:#dbeafe}
+      .section{font:700 15px Inter,Segoe UI,Arial,sans-serif; letter-spacing:.16em; text-transform:uppercase; fill:#7dd3fc}
+      .boxTitle{font:700 24px Inter,Segoe UI,Arial,sans-serif; fill:#10203b}
+      .boxBody{font:400 18px Inter,Segoe UI,Arial,sans-serif; fill:#334155}
+      .small{font:600 15px Inter,Segoe UI,Arial,sans-serif; fill:#0f172a}
+      .chip{font:600 14px Inter,Segoe UI,Arial,sans-serif; fill:#0f172a}
+      .caption{font:500 16px Inter,Segoe UI,Arial,sans-serif; fill:#cbd5e1}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <circle cx="1385" cy="110" r="170" fill="#60a5fa" opacity="0.12"/>
+  <circle cx="210" cy="790" r="220" fill="#38bdf8" opacity="0.08"/>
+  <circle cx="1220" cy="770" r="240" fill="#2563eb" opacity="0.08"/>
+
+  <text x="90" y="105" class="section">Project Pipeline</text>
+  <text x="90" y="160" class="title">UPI Complaint Intelligence</text>
+  <text x="90" y="198" class="subtitle">Multilingual complaint routing with explainable NLP, privacy masking, and support-ready summaries.</text>
+
+  <rect x="90" y="245" rx="28" ry="28" width="1420" height="520" fill="#ffffff" opacity="0.10" stroke="#93c5fd" stroke-opacity="0.22"/>
+
+  <text x="118" y="292" class="caption">Customer-facing flow</text>
+  <text x="118" y="328" class="small" fill="#ffffff">complaint text, voice transcription, or sample text</text>
+
+  <!-- boxes -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+    <rect x="345" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+    <rect x="580" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+    <rect x="815" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+    <rect x="1050" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+    <rect x="1285" y="360" rx="24" ry="24" width="205" height="210" fill="url(#card)"/>
+  </g>
+
+  <!-- arrows -->
+  <line x1="315" y1="465" x2="340" y2="465" stroke="#8ab4ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="550" y1="465" x2="575" y2="465" stroke="#8ab4ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="785" y1="465" x2="810" y2="465" stroke="#8ab4ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1020" y1="465" x2="1045" y2="465" stroke="#8ab4ff" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1255" y1="465" x2="1280" y2="465" stroke="#8ab4ff" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- box 1 -->
+  <text x="140" y="408" class="section" fill="#2563eb">1</text>
+  <text x="140" y="440" class="boxTitle">Input</text>
+  <text x="140" y="472" class="boxBody">Complaint typed or spoken</text>
+  <text x="140" y="500" class="boxBody">English, Hindi, Malayalam,</text>
+  <text x="140" y="528" class="boxBody">Hinglish, Romanized text</text>
+
+  <!-- box 2 -->
+  <text x="375" y="408" class="section" fill="#2563eb">2</text>
+  <text x="375" y="440" class="boxTitle">Preprocess</text>
+  <text x="375" y="472" class="boxBody">Normalize text and detect</text>
+  <text x="375" y="500" class="boxBody">language or script</text>
+  <text x="375" y="528" class="boxBody">Mask OTP, PIN, UPI ID</text>
+
+  <!-- box 3 -->
+  <text x="610" y="408" class="section" fill="#2563eb">3</text>
+  <text x="610" y="440" class="boxTitle">Rule Router</text>
+  <text x="610" y="472" class="boxBody">Keyword and signal scoring</text>
+  <text x="610" y="500" class="boxBody">Intent: pending, failed,</text>
+  <text x="610" y="528" class="boxBody">debited, fraud, refund</text>
+
+  <!-- box 4 -->
+  <text x="845" y="408" class="section" fill="#2563eb">4</text>
+  <text x="845" y="440" class="boxTitle">ML Fallback</text>
+  <text x="845" y="472" class="boxBody">TF-IDF character n-grams</text>
+  <text x="845" y="500" class="boxBody">+ logistic regression</text>
+  <text x="845" y="528" class="boxBody">Works on messy real text</text>
+
+  <!-- box 5 -->
+  <text x="1080" y="408" class="section" fill="#2563eb">5</text>
+  <text x="1080" y="440" class="boxTitle">Explain Output</text>
+  <text x="1080" y="472" class="boxBody">Confidence, urgency, next</text>
+  <text x="1080" y="500" class="boxBody">steps, clarification</text>
+  <text x="1080" y="528" class="boxBody">Structured safe summary</text>
+
+  <!-- box 6 -->
+  <text x="1315" y="408" class="section" fill="#2563eb">6</text>
+  <text x="1315" y="440" class="boxTitle">Support View</text>
+  <text x="1315" y="472" class="boxBody">Masked ticket history</text>
+  <text x="1315" y="500" class="boxBody">Priority and language</text>
+  <text x="1315" y="528" class="boxBody">analytics for support</text>
+
+  <rect x="110" y="615" rx="18" ry="18" width="1380" height="105" fill="#0b1220" opacity="0.7" stroke="#60a5fa" stroke-opacity="0.25"/>
+  <text x="140" y="655" class="caption">Key NLP concepts used</text>
+  <g>
+    <rect x="140" y="675" rx="14" ry="14" width="150" height="30" fill="#dbeafe"/>
+    <rect x="304" y="675" rx="14" ry="14" width="140" height="30" fill="#dbeafe"/>
+    <rect x="458" y="675" rx="14" ry="14" width="170" height="30" fill="#dbeafe"/>
+    <rect x="642" y="675" rx="14" ry="14" width="180" height="30" fill="#dbeafe"/>
+    <rect x="836" y="675" rx="14" ry="14" width="220" height="30" fill="#dbeafe"/>
+    <rect x="1070" y="675" rx="14" ry="14" width="180" height="30" fill="#dbeafe"/>
+    <rect x="1264" y="675" rx="14" ry="14" width="182" height="30" fill="#dbeafe"/>
+    <text x="165" y="695" class="chip">Normalization</text>
+    <text x="332" y="695" class="chip">Language ID</text>
+    <text x="490" y="695" class="chip">Privacy masking</text>
+    <text x="675" y="695" class="chip">Rule-based intent</text>
+    <text x="864" y="695" class="chip">TF-IDF char n-grams</text>
+    <text x="1108" y="695" class="chip">Confidence scoring</text>
+    <text x="1294" y="695" class="chip">Ticket analytics</text>
+  </g>
+
+  <text x="90" y="846" class="caption">Use this diagram in your expo deck to explain how a complaint moves from customer input to masked support review.</text>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "generated_on": "2026-08-15",
+  "modeling_allowed": false,
+  "datasets": {
+    "BANKING77": {
+      "train_rows": 10003,
+      "test_rows": 3080,
+      "combined": 13083,
+      "intents": 77,
+      "columns": ["text","category"],
+      "status": "verified",
+      "recommended_use": "primary intent classification"
+    },
+    "karanverma19_multilingual_customer_support_intent_dataset": {
+      "rows": 41,
+      "columns": ["query","intent","language","category"],
+      "languages": ["Hindi","Hinglish","Punjabi","English"],
+      "status": "verified",
+      "recommended_use": "qualitative evaluation / heuristics only"
+    },
+    "zenodo_4015234": {
+      "name": "A Sentiment Analysis Dataset for Code-Mixed Malayalam-English",
+      "source": "https://zenodo.org/record/4015234",
+      "files": ["Malayalam_first_ready_for_sentiment.tsv"],
+      "license": "CC-BY-4.0",
+      "status": "previewed",
+      "suitability": "MEDIUM",
+      "recommended_use": ["evaluation","tokenization/language-diversity"]
+    },
+    "hospitalcall_malayalam": {
+      "source": "https://huggingface.co/datasets/anjalikrishna07/hospitalcall_malayalam",
+      "files": ["data/train.parquet","metadata.csv"],
+      "license": "unspecified_in_automated_check",
+      "status": "previewed",
+      "suitability": "MEDIUM",
+      "recommended_use": ["evaluation","tokenization/language-diversity"]
+    }
+  },
+  "languages": {
+    "English": {"script_form":"Latin","directly_available":true,"verified":true,"suitable":true},
+    "Hindi": {"script_form":"Devanagari or Romanized","directly_available":true,"verified":true,"suitable":false},
+    "Hinglish": {"script_form":"Romanized","directly_available":true,"verified":true,"suitable":false},
+    "Punjabi": {"script_form":"Gurmukhi or Romanized","directly_available":true,"verified":true,"suitable":false},
+    "Malayalam": {"script_form":"Malayalam script or Romanized","directly_available":"partially","verified":true,"suitable":false}
+  },
+  "verified_resources": [
+    "BANKING77","karanverma19_multilingual_customer_support_intent_dataset","zenodo_4015234","hospitalcall_malayalam"
+  ],
+  "limitations": [
+    "Malayalam resources are not intent-labelled for banking/UPI",
+    "karanverma19 is too small for training",
+    "Hugging Face license must be manually verified before reuse"
+  ],
+  "decisions": {
+    "include_malayalam_in_current_experiment": false,
+    "recommended_next_step_for_malayalam": "collect native Malayalam customer-support intent data or create small human-annotated evaluation set"
+  }
+}

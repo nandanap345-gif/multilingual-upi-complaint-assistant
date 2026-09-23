@@ -1,0 +1,219 @@
+{
+    "step": "5C",
+    "objective": "Final comparison of classical and multilingual NLP models",
+    "evaluation_dataset": "BANKING77 processed test set",
+    "test_rows": 3073,
+    "models_compared": [
+        {
+            "model": "Logistic Regression",
+            "accuracy": 0.84249918646274,
+            "weighted_precision": 0.85630696954319,
+            "weighted_recall": 0.84249918646274,
+            "weighted_f1": 0.8404071949016747,
+            "macro_precision": 0.8563343931566029,
+            "macro_recall": 0.842259494891074,
+            "macro_f1": 0.8403024058343054
+        },
+        {
+            "model": "Linear SVM",
+            "accuracy": 0.8926130816791409,
+            "weighted_precision": 0.8965950065877936,
+            "weighted_recall": 0.8926130816791409,
+            "weighted_f1": 0.8927450852199137,
+            "macro_precision": 0.8966294056975177,
+            "macro_recall": 0.8925710254657623,
+            "macro_f1": 0.8927434645486861
+        },
+        {
+            "model": "Multinomial Naive Bayes",
+            "accuracy": 0.8366417181906931,
+            "weighted_precision": 0.8520874396882313,
+            "weighted_recall": 0.8366417181906931,
+            "weighted_f1": 0.8325841150990944,
+            "macro_precision": 0.8522765414478719,
+            "macro_recall": 0.8363461100303206,
+            "macro_f1": 0.8324790937383406
+        },
+        {
+            "model": "XLM-RoBERTa",
+            "accuracy": 0.8291571753986332,
+            "weighted_precision": 0.847084529201314,
+            "weighted_recall": 0.8291571753986332,
+            "weighted_f1": 0.8050345522028229,
+            "macro_precision": 0.8472082535460277,
+            "macro_recall": 0.8288400196294934,
+            "macro_f1": 0.8047859852445546
+        }
+    ],
+    "selection_criterion": "Highest Macro F1",
+    "best_overall_model": "Linear SVM",
+    "best_overall_macro_f1": 0.8927434645486861,
+    "best_classical_model": "Linear SVM",
+    "error_analysis": {
+        "model": "Linear SVM",
+        "total_test_errors": 330,
+        "error_rate": 0.1073869183208591,
+        "representative_errors": [
+            {
+                "text": "How do I locate my card?",
+                "true_intent": "card_arrival",
+                "predicted_intent": "get_physical_card"
+            },
+            {
+                "text": "I ordered a card but it has not arrived. Help please!",
+                "true_intent": "card_arrival",
+                "predicted_intent": "transfer_not_received_by_recipient"
+            },
+            {
+                "text": "When will I get my card?",
+                "true_intent": "card_arrival",
+                "predicted_intent": "card_delivery_estimate"
+            },
+            {
+                "text": "How long does a card delivery take?",
+                "true_intent": "card_arrival",
+                "predicted_intent": "card_delivery_estimate"
+            },
+            {
+                "text": "How do I know when my card will arrive?",
+                "true_intent": "card_arrival",
+                "predicted_intent": "card_delivery_estimate"
+            },
+            {
+                "text": "I'm starting to think my card is lost because it still hasn't arrived, can you help?",
+                "true_intent": "card_arrival",
+                "predicted_intent": "lost_or_stolen_card"
+            },
+            {
+                "text": "Can I link another card to my account?",
+                "true_intent": "card_linking",
+                "predicted_intent": "getting_spare_card"
+            },
+            {
+                "text": "Is it a good time to exchange?",
+                "true_intent": "exchange_rate",
+                "predicted_intent": "exchange_via_app"
+            },
+            {
+                "text": "The exchange rate would be?",
+                "true_intent": "exchange_rate",
+                "predicted_intent": "wrong_exchange_rate_for_cash_withdrawal"
+            },
+            {
+                "text": "The exchange rate was wrong when I bought something outside the country.",
+                "true_intent": "card_payment_wrong_exchange_rate",
+                "predicted_intent": "wrong_exchange_rate_for_cash_withdrawal"
+            },
+            {
+                "text": "Why am I being charged more ?",
+                "true_intent": "card_payment_wrong_exchange_rate",
+                "predicted_intent": "card_payment_fee_charged"
+            },
+            {
+                "text": "The exchange rate seems off on this transaction",
+                "true_intent": "card_payment_wrong_exchange_rate",
+                "predicted_intent": "wrong_exchange_rate_for_cash_withdrawal"
+            },
+            {
+                "text": "How can I check the exchange rate applied to my transaction?",
+                "true_intent": "card_payment_wrong_exchange_rate",
+                "predicted_intent": "wrong_exchange_rate_for_cash_withdrawal"
+            },
+            {
+                "text": "There is a fee I don't recognize on my statement.",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "card_payment_not_recognised"
+            },
+            {
+                "text": "Can you explain what this random $1 charge is?",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "direct_debit_payment_not_recognised"
+            },
+            {
+                "text": "When will the $1 transaction be credited to me?",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "transfer_not_received_by_recipient"
+            },
+            {
+                "text": "Where did this fee come from?",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "transfer_fee_charged"
+            },
+            {
+                "text": "It's been two weeks, why has the transaction for $1.00 not been reversed?",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "reverted_card_payment?"
+            },
+            {
+                "text": "What is the €1 fee for?",
+                "true_intent": "extra_charge_on_statement",
+                "predicted_intent": "top_up_by_bank_transfer_charge"
+            },
+            {
+                "text": "I made a withdrawal from my account but it has not posted?",
+                "true_intent": "pending_cash_withdrawal",
+                "predicted_intent": "cash_withdrawal_not_recognised"
+            }
+        ],
+        "top_confusion_pairs": [
+            {
+                "true_intent": "why_verify_identity",
+                "predicted_intent": "verify_my_identity",
+                "count": 5
+            },
+            {
+                "true_intent": "unable_to_verify_identity",
+                "predicted_intent": "verify_my_identity",
+                "count": 5
+            },
+            {
+                "true_intent": "pending_transfer",
+                "predicted_intent": "balance_not_updated_after_bank_transfer",
+                "count": 5
+            },
+            {
+                "true_intent": "virtual_card_not_working",
+                "predicted_intent": "getting_virtual_card",
+                "count": 5
+            },
+            {
+                "true_intent": "fiat_currency_support",
+                "predicted_intent": "exchange_via_app",
+                "count": 4
+            },
+            {
+                "true_intent": "wrong_exchange_rate_for_cash_withdrawal",
+                "predicted_intent": "card_payment_wrong_exchange_rate",
+                "count": 4
+            },
+            {
+                "true_intent": "balance_not_updated_after_bank_transfer",
+                "predicted_intent": "transfer_not_received_by_recipient",
+                "count": 4
+            },
+            {
+                "true_intent": "card_arrival",
+                "predicted_intent": "card_delivery_estimate",
+                "count": 3
+            },
+            {
+                "true_intent": "card_payment_wrong_exchange_rate",
+                "predicted_intent": "wrong_exchange_rate_for_cash_withdrawal",
+                "count": 3
+            },
+            {
+                "true_intent": "pin_blocked",
+                "predicted_intent": "card_not_working",
+                "count": 3
+            }
+        ]
+    },
+    "multilingual_evaluation": {
+        "rows": 41,
+        "compatible_rows": 0,
+        "incompatible_rows": 41,
+        "quantitative_evaluation": false
+    },
+    "raw_data_modified": false,
+    "new_model_trained": false
+}

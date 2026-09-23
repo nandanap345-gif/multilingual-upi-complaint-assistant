@@ -1,0 +1,32 @@
+﻿{
+    "dataset":  "karanverma19",
+    "source_url":  "https://huggingface.co/datasets/karanverma19/Multilingual_Customer_Support_Intent_Dataset_for_Indian_Contexts/resolve/main/multilingual_customer_support_intent_dataset.csv?download=true",
+    "license":  "Apache-2.0 (as reported on Hugging Face)",
+    "download_date":  "2026-08-15T06:49:20.9929068Z",
+    "file":  {
+                 "filename":  "karanverma19_multilingual_customer_support_intent_dataset.csv",
+                 "path":  "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\data\\raw_data\\karanverma19_multilingual_customer_support_intent_dataset.csv",
+                 "size_bytes":  2795,
+                 "num_rows":  41,
+                 "columns":  [
+                                 "category",
+                                 "intent",
+                                 "language",
+                                 "query"
+                             ],
+                 "unique_intent_count":  5,
+                 "sample_unique_intents":  [
+                                               "account_issue",
+                                               "complaint",
+                                               "delivery_issue",
+                                               "payment_issue",
+                                               "refund"
+                                           ]
+             },
+    "languages":  [
+                      "English",
+                      "Hindi",
+                      "Hinglish",
+                      "Punjabi"
+                  ]
+}

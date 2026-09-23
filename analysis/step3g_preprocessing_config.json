@@ -1,0 +1,29 @@
+{
+  "generated_on": "2026-08-15",
+  "source_datasets": [
+    "data/raw_data/banking77_train.csv",
+    "data/raw_data/banking77_test.csv",
+    "data/raw_data/karanverma19_multilingual_customer_support_intent_dataset.csv"
+  ],
+  "preprocessing_operations": {
+    "unicode_normalization": "NFKC",
+    "whitespace_normalization": "collapse multiple whitespace to single space; strip leading/trailing",
+    "punctuation": "preserve",
+    "casing": "preserve",
+    "romanized_text": "preserve",
+    "code_mixed_text": "preserve"
+  },
+  "excluded_operations": ["translation","transliteration","aggressive_stopword_removal","stemming","lemmatization","augmentation"],
+  "language_policy": {
+    "preserve_original_script": true,
+    "do_not_transliterate_or_translate_malayalam": true,
+    "retain_romanized_forms": true
+  },
+  "leakage_policy": "Preserve train/test split; do not compute vocabulary or fit statistics on test data; no data leakage allowed.",
+  "output_files": [
+    "data/processed/banking77_train.csv",
+    "data/processed/banking77_test.csv",
+    "data/processed/karanverma19_multilingual_customer_support_intent_dataset.csv"
+  ],
+  "modeling_started": false
+}

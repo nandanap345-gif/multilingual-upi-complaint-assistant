@@ -1,0 +1,73 @@
+{
+  "raw_train": 10003,
+  "raw_test": 3080,
+  "raw_total": 13083,
+  "processed_train": 10003,
+  "processed_test": 3073,
+  "detected_cross_split_duplicates": 7,
+  "reported_duplicates_removed": 7,
+  "duplicate_count_matches_report": true,
+  "all_duplicate_labels_identical": true,
+  "remaining_processed_overlap": 0,
+  "leakage_check_pass": true,
+  "row_count_check_pass": true,
+  "overall_pass": true,
+  "duplicates": [
+    {
+      "raw_test_index": 554,
+      "raw_train_index": 1722,
+      "text": "How do I unblock my PIN?",
+      "train_category": "pin_blocked",
+      "test_category": "pin_blocked",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 976,
+      "raw_train_index": 3103,
+      "text": "\n\nWhat businesses accept this card?",
+      "train_category": "card_acceptance",
+      "test_category": "card_acceptance",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 977,
+      "raw_train_index": 3116,
+      "text": "Where can I use my card?",
+      "train_category": "card_acceptance",
+      "test_category": "card_acceptance",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 1432,
+      "raw_train_index": 4476,
+      "text": "There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.",
+      "train_category": "compromised_card",
+      "test_category": "compromised_card",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 1474,
+      "raw_train_index": 4576,
+      "text": "At which ATMs can I use this card?",
+      "train_category": "atm_support",
+      "test_category": "atm_support",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 2149,
+      "raw_train_index": 6984,
+      "text": "Which cash machines will allow me to change my PIN?",
+      "train_category": "change_pin",
+      "test_category": "change_pin",
+      "labels_identical": true
+    },
+    {
+      "raw_test_index": 3070,
+      "raw_train_index": 9921,
+      "text": "I don't live in the UK.  Can I still get a card?",
+      "train_category": "country_support",
+      "test_category": "country_support",
+      "labels_identical": true
+    }
+  ]
+}

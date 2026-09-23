@@ -1,0 +1,42 @@
+query,intent,language,category
+Refund kab milega?,refund,Hindi,ecommerce
+My payment failed but money deducted,payment_issue,English,banking
+Order abhi tak deliver nahi hua,delivery_issue,Hinglish,ecommerce
+Mera account block ho gaya hai,account_issue,Hindi,banking
+Delivery late kyun hai?,complaint,Hinglish,ecommerce
+Paise kat gaye par recharge nahi hua,payment_issue,Hindi,telecom
+Mera refund kado milega?,refund,Punjabi,ecommerce
+How do I reset my account password?,account_issue,English,technology
+Recharge successful dikh raha hai but service chalu nahi hui,complaint,Hinglish,telecom
+Mera order cancel ho gaya without reason,complaint,Hindi,ecommerce
+Payment ho gaya par ticket book nahi hui,payment_issue,Hinglish,travel
+Mera bank account access nahi ho raha,account_issue,Hindi,banking
+Order return request ka status kya hai?,refund,Hinglish,ecommerce
+Parcel ajj tak nahi aaya,delivery_issue,Punjabi,ecommerce
+Why was my payment declined?,payment_issue,English,banking
+Mera SIM activate nahi hua,account_issue,Hindi,telecom
+"Refund request submit kar di hai, ab kya hoga?",refund,Hindi,ecommerce
+Delivery address galat update ho gaya,account_issue,Hinglish,ecommerce
+Booking confirmation email nahi aayi,complaint,Hindi,travel
+My order shows delivered but I did not receive it,delivery_issue,English,ecommerce
+Mera UPI payment pending dikha raha hai,payment_issue,Hindi,banking
+Account verification OTP nahi aa raha,account_issue,Hinglish,technology
+Recharge fail ho gaya but amount deducted,payment_issue,Hinglish,telecom
+Meri flight booking cancel ho gayi,complaint,Hindi,travel
+Refund process kiven hovega?,refund,Punjabi,ecommerce
+Order tracking update nahi ho raha,delivery_issue,Hinglish,ecommerce
+My account has been locked after multiple login attempts,account_issue,English,technology
+Late delivery de karke complaint karni hai,complaint,Punjabi,ecommerce
+Payment do baar deduct ho gaya,payment_issue,Hindi,banking
+"Meri train ticket waitlist par hai, kya karu?",complaint,Hinglish,travel
+Return pickup abhi tak schedule nahi hui,refund,Hindi,ecommerce
+Mera package wrong address te chala gaya,delivery_issue,Punjabi,ecommerce
+Why is my recharge still pending?,payment_issue,English,telecom
+App login nahi ho raha after update,account_issue,Hinglish,technology
+Order delay de bare complaint karni hai,complaint,Punjabi,ecommerce
+Refund amount mere account vich nahi aaya,refund,Punjabi,banking
+Money deducted but cab booking failed,payment_issue,English,travel
+Mera internet plan activate nahi hua,account_issue,Hindi,telecom
+Item delivered damaged hai,complaint,Hinglish,ecommerce
+Courier status out for delivery hai but parcel nahi mila,delivery_issue,Hindi,ecommerce
+Mera wallet balance update nahi hua,payment_issue,Hindi,ecommerce

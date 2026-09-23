@@ -1,0 +1,30 @@
+{
+  "step": "5A",
+  "model": "XLM-RoBERTa",
+  "model_name": "FacebookAI/xlm-roberta-base",
+  "task": "BANKING77 intent classification",
+  "num_classes": 77,
+  "training_rows": 10003,
+  "testing_rows": 3073,
+  "max_sequence_length": 128,
+  "learning_rate": 2e-05,
+  "train_batch_size": 8,
+  "evaluation_batch_size": 8,
+  "epochs": 2,
+  "seed": 42,
+  "metrics": {
+    "accuracy": 0.8291571753986332,
+    "weighted_precision": 0.847084529201314,
+    "weighted_recall": 0.8291571753986332,
+    "weighted_f1": 0.8050345522028229,
+    "macro_precision": 0.8472082535460277,
+    "macro_recall": 0.8288400196294934,
+    "macro_f1": 0.8047859852445546
+  },
+  "evaluation_loss": 0.997027575969696,
+  "confusion_matrix_shape": [
+    77,
+    77
+  ],
+  "model_path": "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\models\\step5a_xlmr"
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
+models/
+results/
+data/raw/
+data/processed/
+data/test/
+data/demo_ticket_history.json

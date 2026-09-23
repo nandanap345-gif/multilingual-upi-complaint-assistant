@@ -1,0 +1,31 @@
+{
+  "step": "4C",
+  "model": "Multinomial Naive Bayes",
+  "representation": "TF-IDF",
+  "dataset": "BANKING77",
+  "training_rows": 10003,
+  "testing_rows": 3073,
+  "training_classes": 77,
+  "testing_classes": 77,
+  "combined_classes": 77,
+  "vocabulary_size": 25523,
+  "tfidf_ngram_range": [
+    1,
+    2
+  ],
+  "lowercase": false,
+  "sublinear_tf": true,
+  "alpha": 0.1,
+  "metrics": {
+    "accuracy": 0.8366417181906931,
+    "weighted_precision": 0.8520874396882313,
+    "weighted_recall": 0.8366417181906931,
+    "weighted_f1": 0.8325841150990944,
+    "macro_precision": 0.8522765414478719,
+    "macro_recall": 0.8363461100303206,
+    "macro_f1": 0.8324790937383406
+  },
+  "model_artifact": "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\models\\step4c_multinomial_nb.joblib",
+  "vectorizer_artifact": "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\models\\step4c_tfidf_vectorizer.joblib",
+  "generated_on": "2026-08-16T11:52:23.995861+00:00"
+}

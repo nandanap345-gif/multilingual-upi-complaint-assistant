@@ -1,0 +1,243 @@
+{
+  "generated_on": "2026-08-15T08:45:08.167496Z",
+  "karanverma19_analysis": {
+    "total_records": 41,
+    "per_language": {
+      "Hinglish": {
+        "count": 12,
+        "percent": 29.27,
+        "representative_examples": [
+          "Order abhi tak deliver nahi hua",
+          "Delivery late kyun hai?",
+          "Recharge successful dikh raha hai but service chalu nahi hui",
+          "Payment ho gaya par ticket book nahi hui",
+          "Order return request ka status kya hai?"
+        ],
+        "likely_romanized_count": 10,
+        "possible_code_mixed_count": 0,
+        "uncertain_count": 2,
+        "likely_romanized_examples": [
+          {
+            "text": "Order abhi tak deliver nahi hua",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Delivery late kyun hai?",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Recharge successful dikh raha hai but service chalu nahi hui",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Payment ho gaya par ticket book nahi hui",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Order return request ka status kya hai?",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          }
+        ],
+        "possible_code_mixed_examples": [],
+        "uncertain_examples": [
+          {
+            "text": "Delivery address galat update ho gaya",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "Recharge fail ho gaya but amount deducted",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          }
+        ]
+      },
+      "Hindi": {
+        "count": 15,
+        "percent": 36.59,
+        "representative_examples": [
+          "Refund kab milega?",
+          "Mera account block ho gaya hai",
+          "Paise kat gaye par recharge nahi hua",
+          "Mera order cancel ho gaya without reason",
+          "Mera bank account access nahi ho raha"
+        ],
+        "likely_romanized_count": 14,
+        "possible_code_mixed_count": 0,
+        "uncertain_count": 1,
+        "likely_romanized_examples": [
+          {
+            "text": "Refund kab milega?",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Mera account block ho gaya hai",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Paise kat gaye par recharge nahi hua",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Mera order cancel ho gaya without reason",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Mera bank account access nahi ho raha",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          }
+        ],
+        "possible_code_mixed_examples": [],
+        "uncertain_examples": [
+          {
+            "text": "Payment do baar deduct ho gaya",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          }
+        ]
+      },
+      "Punjabi": {
+        "count": 7,
+        "percent": 17.07,
+        "representative_examples": [
+          "Mera refund kado milega?",
+          "Parcel ajj tak nahi aaya",
+          "Refund process kiven hovega?",
+          "Late delivery de karke complaint karni hai",
+          "Mera package wrong address te chala gaya"
+        ],
+        "likely_romanized_count": 5,
+        "possible_code_mixed_count": 0,
+        "uncertain_count": 2,
+        "likely_romanized_examples": [
+          {
+            "text": "Mera refund kado milega?",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Parcel ajj tak nahi aaya",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Late delivery de karke complaint karni hai",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Mera package wrong address te chala gaya",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          },
+          {
+            "text": "Order delay de bare complaint karni hai",
+            "heuristic": "romanized markers (possibly with English loanword)"
+          }
+        ],
+        "possible_code_mixed_examples": [],
+        "uncertain_examples": [
+          {
+            "text": "Refund process kiven hovega?",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "Refund amount mere account vich nahi aaya",
+            "heuristic": "romanized markers + 2 English tokens",
+            "assessment": "uncertain"
+          }
+        ],
+        "uncertain_examples": [
+          {
+            "text": "Refund process kiven hovega?",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          }
+        ]
+      },
+      "English": {
+        "count": 7,
+        "percent": 17.07,
+        "representative_examples": [
+          "My payment failed but money deducted",
+          "How do I reset my account password?",
+          "Why was my payment declined?",
+          "My order shows delivered but I did not receive it",
+          "My account has been locked after multiple login attempts"
+        ],
+        "likely_romanized_count": 0,
+        "possible_code_mixed_count": 0,
+        "uncertain_count": 7,
+        "likely_romanized_examples": [],
+        "possible_code_mixed_examples": [],
+        "uncertain_examples": [
+          {
+            "text": "My payment failed but money deducted",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "How do I reset my account password?",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "Why was my payment declined?",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "My order shows delivered but I did not receive it",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          },
+          {
+            "text": "My account has been locked after multiple login attempts",
+            "heuristic": "no clear romanized markers or mixed evidence"
+          }
+        ]
+      }
+    }
+  },
+  "karan_summary_table": [
+    {
+      "dataset": "karanverma19",
+      "language_label": "Hinglish",
+      "total_records": 12,
+      "likely_romanized": 10,
+      "possible_code_mixed": 0,
+      "uncertain": 2
+    },
+    {
+      "dataset": "karanverma19",
+      "language_label": "Hindi",
+      "total_records": 15,
+      "likely_romanized": 14,
+      "possible_code_mixed": 0,
+      "uncertain": 1
+    },
+    {
+      "dataset": "karanverma19",
+      "language_label": "Punjabi",
+      "total_records": 7,
+      "likely_romanized": 5,
+      "possible_code_mixed": 1,
+      "uncertain": 1
+    },
+    {
+      "dataset": "karanverma19",
+      "language_label": "English",
+      "total_records": 7,
+      "likely_romanized": 0,
+      "possible_code_mixed": 0,
+      "uncertain": 7
+    }
+  ],
+  "banking77_observational": {
+    "total_records": 13083,
+    "informal_examples_sample": [
+      "When did you send me my new card?",
+      "Do you have info about the card on delivery?",
+      "Can you track my card for me?",
+      "It's been a week since you issued me a card and I still didn't get it. Should I keep waiting?",
+      "Have you sent out my card yet?",
+      "It's been a week since you sent my card and I still don't have it.",
+      "How do I track the card you sent me?",
+      "Is there a tracking number for the card you sent me?",
+      "I would like to track the card you sent to me.",
+      "What's the tracking on the card you sent?"
+    ]
+  },
+  "notes": [
+    "Exploratory heuristics only; not gold-standard annotations.",
+    "`language` column is dataset-provided metadata."
+  ]
+}

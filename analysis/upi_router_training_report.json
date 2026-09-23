@@ -1,0 +1,117 @@
+{
+  "train_rows": 508,
+  "test_rows": 128,
+  "labels": 13,
+  "macro_f1": 0.9677319240786735,
+  "accuracy": 0.96875,
+  "class_distribution": {
+    "MONEY_DEDUCTED_PAYMENT_FAILED": 75,
+    "UPI_PIN_OR_AUTHENTICATION_PROBLEM": 41,
+    "UPI_APP_TECHNICAL_PROBLEM": 42,
+    "MONEY_DEDUCTED_NO_RECIPIENT": 61,
+    "REFUND_NOT_RECEIVED": 51,
+    "WRONG_AMOUNT": 41,
+    "FRAUD_OR_UNAUTHORIZED_TRANSACTION": 42,
+    "PAYMENT_PENDING": 79,
+    "BANK_ACCOUNT_LINKING_PROBLEM": 42,
+    "DUPLICATE_TRANSACTION": 42,
+    "PAYMENT_FAILED": 41,
+    "OTHER_UPI_COMPLAINT": 37,
+    "QR_PAYMENT_PROBLEM": 42
+  },
+  "classification_report": {
+    "BANK_ACCOUNT_LINKING_PROBLEM": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1-score": 0.9411764705882353,
+      "support": 8.0
+    },
+    "DUPLICATE_TRANSACTION": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1-score": 0.9473684210526315,
+      "support": 9.0
+    },
+    "FRAUD_OR_UNAUTHORIZED_TRANSACTION": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9411764705882353,
+      "support": 9.0
+    },
+    "MONEY_DEDUCTED_NO_RECIPIENT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "MONEY_DEDUCTED_PAYMENT_FAILED": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.9285714285714286,
+      "support": 15.0
+    },
+    "OTHER_UPI_COMPLAINT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "PAYMENT_FAILED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "PAYMENT_PENDING": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "QR_PAYMENT_PROBLEM": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 9.0
+    },
+    "REFUND_NOT_RECEIVED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "UPI_APP_TECHNICAL_PROBLEM": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 9.0
+    },
+    "UPI_PIN_OR_AUTHENTICATION_PROBLEM": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "WRONG_AMOUNT": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 8.0
+    },
+    "accuracy": 0.96875,
+    "macro avg": {
+      "precision": 0.9683760683760684,
+      "recall": 0.9715811965811967,
+      "f1-score": 0.9677319240786735,
+      "support": 128.0
+    },
+    "weighted avg": {
+      "precision": 0.9735243055555556,
+      "recall": 0.96875,
+      "f1-score": 0.9690051952798664,
+      "support": 128.0
+    }
+  },
+  "model_path": "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\models\\upi_router_char_logreg.joblib",
+  "dataset_path": "C:\\Users\\nanda\\Downloads\\Multilingual_UPI_Complaint_Assistant\\data\\processed\\upi_router_augmented_train.csv"
+}

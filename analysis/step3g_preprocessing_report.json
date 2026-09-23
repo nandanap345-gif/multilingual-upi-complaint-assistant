@@ -1,0 +1,39 @@
+{
+  "banking_train": {
+    "input_rows": 10003,
+    "output_rows": 10003,
+    "missing_text_count": 0,
+    "headers": [
+      "text",
+      "category"
+    ]
+  },
+  "banking_test": {
+    "input_rows": 3080,
+    "output_rows": 3073,
+    "missing_text_count": 0,
+    "headers": [
+      "text",
+      "category"
+    ]
+  },
+  "banking_unique_intents": 77,
+  "banking_train_duplicates": 4,
+  "banking_test_duplicates": 1,
+  "cross_split_duplicates_removed_from_test": 7,
+  "banking_test_duplicates_after_removal": 1,
+  "cross_split_duplicates": 7,
+  "karan": {
+    "input_rows": 41,
+    "output_rows": 41,
+    "missing_text_count": 0,
+    "headers": [
+      "query",
+      "intent",
+      "language",
+      "category"
+    ]
+  },
+  "karan_duplicates": 0,
+  "malayalam_policy_statement": "Malayalam is retained as a documented language/resource scope and limitation, but no synthetic or translated Malayalam training data is introduced in Step 3G."
+}

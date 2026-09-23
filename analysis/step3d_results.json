@@ -1,0 +1,86 @@
+{
+  "generated_on": "2026-08-15T08:28:36.041449Z",
+  "karanverma19": {
+    "total_records": 41,
+    "unique_language_labels": [
+      "English",
+      "Hindi",
+      "Hinglish",
+      "Punjabi"
+    ],
+    "language_counts": {
+      "Hindi": 15,
+      "English": 7,
+      "Hinglish": 12,
+      "Punjabi": 7
+    },
+    "language_percent": {
+      "Hindi": 36.59,
+      "English": 17.07,
+      "Hinglish": 29.27,
+      "Punjabi": 17.07
+    },
+    "language_intent_distribution": {
+      "Hindi": {
+        "refund": 3,
+        "account_issue": 4,
+        "payment_issue": 4,
+        "complaint": 3,
+        "delivery_issue": 1
+      },
+      "English": {
+        "payment_issue": 4,
+        "account_issue": 2,
+        "delivery_issue": 1
+      },
+      "Hinglish": {
+        "delivery_issue": 2,
+        "complaint": 4,
+        "payment_issue": 2,
+        "refund": 1,
+        "account_issue": 3
+      },
+      "Punjabi": {
+        "refund": 3,
+        "delivery_issue": 2,
+        "complaint": 2
+      }
+    },
+    "duplicate_queries": {},
+    "representative_examples": {
+      "Hindi": [
+        "Refund kab milega?",
+        "Mera account block ho gaya hai",
+        "Paise kat gaye par recharge nahi hua"
+      ],
+      "English": [
+        "My payment failed but money deducted",
+        "How do I reset my account password?",
+        "Why was my payment declined?"
+      ],
+      "Hinglish": [
+        "Order abhi tak deliver nahi hua",
+        "Delivery late kyun hai?",
+        "Recharge successful dikh raha hai but service chalu nahi hui"
+      ],
+      "Punjabi": [
+        "Mera refund kado milega?",
+        "Parcel ajj tak nahi aaya",
+        "Refund process kiven hovega?"
+      ]
+    },
+    "note": "The `language` column is metadata supplied by the source dataset."
+  },
+  "banking77_observational": {
+    "total_records": 13083,
+    "ascii_only_count": 13022,
+    "ascii_only_percent": 99.53,
+    "non_ascii_count": 61,
+    "indic_script_count": 0,
+    "indic_script_examples": []
+  },
+  "notes": [
+    "All analysis is read-only with respect to data/raw_data/",
+    "karanverma19 `language` column is dataset-provided metadata."
+  ]
+}
